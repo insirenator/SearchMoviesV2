@@ -44,6 +44,7 @@ const SearchSection = () => {
 						setErrorMsg("")
 					}
 					else {
+						setFoundItems({});
 						setErrorMsg("No Results Found! :(");
 					}
 				})
