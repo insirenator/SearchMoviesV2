@@ -35,7 +35,7 @@ const SearchSection = () => {
 		console.log(inputVal);
 
 		if (inputVal) {
-			fetch(`http://www.omdbapi.com/?apikey=da4baaed&s=${inputVal}`)
+			fetch(`https://www.omdbapi.com/?apikey=da4baaed&s=${inputVal}`)
 				.then(res => res.json())
 				.then(data => {
 					console.log(data); 
