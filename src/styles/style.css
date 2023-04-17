@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	font-family: "Segoe UI", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 2rem 20px;
+}
+
+main {
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.title {
+	letter-spacing: -2px;
+	/*text-shadow: 2px 1px 5px rgba(0,0,0,0.5);*/
+}
+
+.search-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.search-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+	/*border: 1px solid black;*/
+	width: min(300px, 90%);
+	border-radius: 8px;
+	padding:5px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.search-input {
+	border: none;
+	text-indent: 15px;
+	/*background-color: red;*/
+	width: 90%;
+}
+
+.search-input:focus {
+	outline: none;
+}
+
+.search-icon {
+	cursor: pointer;
+}
+
+.search-icon:hover {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 50%;
+	padding-left:2px;
+}
+
+.search-icon:active {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.found {
+	color: rgba(50,50,50,0.8);
+}
+
+.search-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.search-item {
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/*border: 1px solid grey;*/
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.search-item:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
+.movie-title {
+	font-size: 16px;
+}
+
+.movie-year {
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(0,0,0,0.8);
+}
+
+.movie-poster {
+	width: 80px;
+	height: 134px;
+	border-radius: 8px; 
+}
